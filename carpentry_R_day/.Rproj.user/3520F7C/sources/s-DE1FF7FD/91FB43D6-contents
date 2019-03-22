@@ -1,0 +1,15 @@
+# Jon's background tiff counter work
+
+setwd("/Users/jjablonski/Desktop/data-shell/carpentry_R_day")
+
+# get your data
+
+# files4.txt is the tiff directory call
+# with directories and totals removed.
+
+FrameFiles <- read.delim2("files4.txt", 
+                          header = FALSE, 
+                          strip.white = FALSE, 
+                          blank.lines.skip = TRUE, 
+                          sep = " ", 
+                          skipNul = FALSE)
